@@ -1,0 +1,90 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0 5rem 0; /*top right bottom left*/
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin: 5rem 0 3rem 0; /*top right bottom left*/
+}
+
+.productsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5rem;
+  max-width: 137.5rem;
+}
+
+.infoCardContainer {
+  width: 90%;
+  height: 50rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 137.5rem;
+  margin-bottom: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.infoCardContainer img {
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.infoCardTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.infoCardTexts p {
+  font-size: 4rem;
+  text-align: center;
+  margin: 5rem 5rem 1rem 5rem; /*top right bottom left*/
+}
+
+.infoCardTexts span {
+  margin-bottom: 5rem;
+}
+
+.infoCardTexts a {
+  background-color: var(--purple);
+  color: var(--white);
+  text-decoration: none;
+  align-items: center;
+  padding: 1.5rem 15rem;
+  border-radius: 0.8rem;
+  font-weight: bold;
+}
+
+.infoCardTexts a:hover {
+  color: var(--purple);
+  background-color: var(--white);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.1s;
+}
+
+@media (max-width: 1200px) {
+  .infoCardContainer {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .infoCardContainer img {
+    display: none;
+  }
+}

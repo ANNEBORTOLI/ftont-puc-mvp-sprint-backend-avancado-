@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "kombucha Pitanga",
+      "size": "350ml",
+      "price": "18.00",
+      "description": "Kombucha é uma bebida milenar de origem chinesa conhecida como o “chá da imortalidade” e é obtida a partir da fermentação natural da infusão do chá minimamente adoçado realizada por bactérias e leveduras benéficas para a saúde.",
+      "image": "/prod-pitanga.png"
+    },
+    {
+      "id": 2,
+      "title": "kombucha Lima da Persia",
+      "size": "350ml",
+      "price": "18.00",
+      "description": "Kombucha é uma bebida milenar de origem chinesa conhecida como o “chá da imortalidade” e é obtida a partir da fermentação natural da infusão do chá minimamente adoçado realizada por bactérias e leveduras benéficas para a saúde.",
+      "image": "/prod-lima-da-persia.png"
+    },
+    {
+      "id": 3,
+      "title": "kombucha Hibisco",
+      "size": "350ml",
+      "price": "18.00",
+      "description": "Kombucha é uma bebida milenar de origem chinesa conhecida como o “chá da imortalidade” e é obtida a partir da fermentação natural da infusão do chá minimamente adoçado realizada por bactérias e leveduras benéficas para a saúde.",
+      "image": "/prod-hibisco.png"
+    },
+    {
+      "id": 4,
+      "title": "kombucha Guaco",
+      "size": "350ml",
+      "price": "18.00",
+      "description": "Kombucha é uma bebida milenar de origem chinesa conhecida como o “chá da imortalidade” e é obtida a partir da fermentação natural da infusão do chá minimamente adoçado realizada por bactérias e leveduras benéficas para a saúde.",
+      "image": "/prod-guaco.png"
+    },
+    {
+      "id": 5,
+      "title": "kombucha Chá Verde",
+      "size": "350ml",
+      "price": "18.00",
+      "description": "Kombucha é uma bebida milenar de origem chinesa conhecida como o “chá da imortalidade” e é obtida a partir da fermentação natural da infusão do chá minimamente adoçado realizada por bactérias e leveduras benéficas para a saúde.",
+      "image": "/prod-chaverde.png"
+    },
+    {
+      "id": 6,
+      "title": "kombucha Capim Limão",
+      "size": "350ml",
+      "price": "18.00",
+      "description": "Kombucha é uma bebida milenar de origem chinesa conhecida como o “chá da imortalidade” e é obtida a partir da fermentação natural da infusão do chá minimamente adoçado realizada por bactérias e leveduras benéficas para a saúde.",
+      "image": "/prod-capim-limao.png"
+    },
+    {
+      "id": 7,
+      "title": "kombucha Alfazema",
+      "size": "350ml",
+      "price": "18.00",
+      "description": "Kombucha é uma bebida milenar de origem chinesa conhecida como o “chá da imortalidade” e é obtida a partir da fermentação natural da infusão do chá minimamente adoçado realizada por bactérias e leveduras benéficas para a saúde.",
+      "image": "/prod-alfazema.png"
+    },
+    {
+      "id": 8,
+      "title": "kombucha Abacaxi",
+      "size": "350ml",
+      "price": "18.00",
+      "description": "Kombucha é uma bebida milenar de origem chinesa conhecida como o “chá da imortalidade” e é obtida a partir da fermentação natural da infusão do chá minimamente adoçado realizada por bactérias e leveduras benéficas para a saúde.",
+      "image": "/prod-abacaxi.png"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+.cartBox {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.cartBox img {
+  width: 44.8rem;
+  height: 44.8rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.productWrapperInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.productWrapperInfo strong {
+  font-size: 2.5rem;
+}
+
+.textDescription {
+  max-width: 50rem;
+  margin-bottom: 2rem;
+}
+
+.textDescription h3 {
+  margin-bottom: 1rem;
+}
+
+.textDescription p {
+  line-height: 1.5;
+}
+
+.cartBox button {
+  max-width: 24.8rem;
+  padding: 1rem 3rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: var(--purple);
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.cartBox button:hover {
+  color: var(--purple);
+  background-color: var(--green);
+  cursor: pointer;
+  transition: color 0.1s;
+}

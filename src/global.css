@@ -1,0 +1,39 @@
+:root {
+  --white: #fff;
+  --beige: #fdf8ee;
+  --grey-100: #d9d9d9;
+  --grey-200: #cacaca;
+  --grey-900: #222;
+
+  --green: #96ab10;
+  --purple: #3d1152;
+  --black: #000000;
+  --red: #ff6347;
+
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem; /*16px*/
+  font-weight: 300;
+  background-color: var(--white);
+  color: var(--black);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--purple);
+}

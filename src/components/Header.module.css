@@ -1,0 +1,64 @@
+.headerContainer {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0.375rem 0 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.miniHeader {
+  background-color: var(--purple);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem; /* 12px */
+  letter-spacing: 0.2rem; /* 2px */
+  height: 4.8rem; /* 48px */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.miniHeader a {
+  color: var(--green);
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 0.5rem; /*5px*/
+}
+
+.miniHeader a:hover {
+  color: var(--white);
+  transition: color 0.1s;
+}
+
+.bigHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem; /* 80px */
+
+  max-width: 137.5rem; /* 1375px */
+  margin: 0 auto;
+}
+
+.bigHeader nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* 20px */
+  margin-right: 2rem;
+}
+
+.bigHeader img {
+  height: 5.7rem; /* 57px */
+  width: auto; /* Maintain aspect ratio */
+  margin-left: 2rem;
+}
+
+.bigHeader a {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bigHeader a:hover {
+  color: var(--green);
+  transition: color 0.1s;
+}

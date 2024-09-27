@@ -1,0 +1,8 @@
+.sliderContainer {
+  width: 100%;
+  max-width: 120rem;
+}
+
+.sliderContainer img {
+  border-radius: 1rem;
+}

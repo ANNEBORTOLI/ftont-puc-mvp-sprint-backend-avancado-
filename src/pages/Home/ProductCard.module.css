@@ -1,0 +1,53 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 0.8rem;
+  margin: 1rem;
+}
+
+.cardWrapper img {
+  width: 25rem; /*250px*/
+  border-radius: 0.8rem;
+}
+
+.cardTitle {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.cardBotton {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  gap: 5rem;
+}
+
+.cardBotton .price {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.cardBotton .btnAdd {
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+  border: 0;
+  background: var(--purple);
+  color: var(--white);
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background-color 0.1s;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnAdd:hover {
+  background-color: var(--green);
+  color: var(--purple);
+  transition: color 0.1s;
+}
