@@ -24,6 +24,38 @@ export function Cart() {
     handleRemoveItemFromShoppingList(id);
   };
 
+  const isNumeric = (str) => str == Number.parseFloat(str);
+
+  const viaCEP = () => {
+    let cep = document.getElementById("cep").value;
+
+    if (isNumeric(cep) && cep.length == 8) {
+      let url = "https://viacep.com.br/ws/" + cep + "/json/";
+
+      fetch(url, {
+        method: "GET"
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          let dados =
+            data.logradouro +
+            "<br>" +
+            data.bairro +
+            "<br>" +
+            data.localidade +
+            " - " +
+            data.uf;
+
+          document.getElementById("endereco").innerHTML = dados;
+        })
+        .catch((error) => {
+          console.error("Erro: ", error);
+        });
+    } else {
+      alert("CEP deve ter 08 digitos apenas");
+    }
+  };
+
   return (
     <>
       <Header />
@@ -98,8 +130,16 @@ export function Cart() {
                   </span>
                 </div>
                 <div>
-                  <span>Frete</span>
-                  <span>Gratuito</span>
+                  <span>CEP</span>
+                  <span>
+                    <input type="text" id="cep" maxLength={8} size={7}></input>
+                  </span>
+                  <span>
+                    <button onClick={() => viaCEP()}>Buscar</button>
+                  </span>
+                </div>
+                <div>
+                  <span id="endereco"></span>
                 </div>
                 <div>
                   <button>Adicionar cupom de desconto</button>
