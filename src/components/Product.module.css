@@ -42,3 +42,24 @@
 .icon:hover {
   color: var(--red); /* Change color on hover */
 }
+
+.listTitle {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.addProduct {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px 20px 10px 20px;
+  text-align: right;
+}
+
+.addProduct:hover {
+  color: var(--purple);
+  transition: color 0.1s;
+}

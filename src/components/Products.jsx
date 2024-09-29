@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Trash, PencilLine } from "@phosphor-icons/react";
 import styles from "./Product.module.css";
 
 export function Products() {
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     let url = "http://localhost:5000/products";
@@ -36,17 +38,29 @@ export function Products() {
     }
   };
 
+  const redirectToAddProduct = () => {
+    navigate("/addProduct?action=add");
+  };
+
+  const redirectToEditProduct = (id) => {
+    navigate(`/editProduct?action=edit&id=${id}`);
+  };
+
   return (
     <>
       <div className={styles.container}>
+        <p className={styles.listTitle}>ADMINISTRAÇÃO DE PRODUTOS</p>
+        <p className={styles.addProduct} onClick={() => redirectToAddProduct()}>
+          + ADICIONAR
+        </p>
         <table className={styles.table}>
           <thead className={styles.header}>
             <tr>
               <th className={styles.headerCell}>Id</th>
-              <th className={styles.headerCell}>Title</th>
-              <th className={styles.headerCell}>Size</th>
-              <th className={styles.headerCell}>Price</th>
-              <th className={styles.headerCell}>Actions</th>
+              <th className={styles.headerCell}>Nome</th>
+              <th className={styles.headerCell}>Tamanho</th>
+              <th className={styles.headerCell}>Preço</th>
+              <th className={styles.headerCell}>Ações</th>
             </tr>
           </thead>
           <tbody>
@@ -57,7 +71,7 @@ export function Products() {
                 <td className={styles.dataCell}>{product.size}</td>
                 <td className={styles.dataCell}>{product.price}</td>
                 <td className={styles.dataCell}>
-                  <span>
+                  <span onClick={() => redirectToEditProduct(product.id)}>
                     <PencilLine className={styles.icon} size={24} />
                   </span>
                   <span onClick={() => removeProduct(product.id)}>
