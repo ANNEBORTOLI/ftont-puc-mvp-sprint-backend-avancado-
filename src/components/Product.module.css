@@ -1,0 +1,44 @@
+/* Products.module.css */
+
+.container {
+  margin: 50px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.header {
+  background-color: #f2f2f2;
+}
+
+.headerCell,
+.dataCell {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.headerCell {
+  font-weight: bold;
+  color: #333;
+}
+
+.dataRow:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.dataRow:hover {
+  background-color: #f1f1f1;
+}
+
+.icon {
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.2s;
+}
+
+.icon:hover {
+  color: var(--red); /* Change color on hover */
+}
