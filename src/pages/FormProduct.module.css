@@ -3,8 +3,8 @@
   flex-direction: column;
   max-width: 400px;
   margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .formGroup {
@@ -41,8 +41,14 @@ input[type="text"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
 }
 
 .submitButton:hover {
   background-color: #0056b3;
+}
+
+.message {
+  padding: 20px;
+  color: var(--red);
 }
